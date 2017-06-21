@@ -1,0 +1,11 @@
+---
+resources:
+- name: first-concourse-pipeline
+  type: git
+  source:
+    uri:
+jobs:
+- name: hello-world-job
+  plan:
+   - task: hello-world-task
+     file: tasks/hello-world/hello-world-task.yml
