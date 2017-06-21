@@ -3,9 +3,9 @@ resources:
 - name: first-concourse-pipeline
   type: git
   source:
-    uri:
+    uri: https://github.com/afournier-pivotal/concourse
 jobs:
 - name: hello-world-job
   plan:
    - task: hello-world-task
-     file: tasks/hello-world/hello-world-task.yml
+     file: concourse/tasks/hello-world/hello-world-task.yml
