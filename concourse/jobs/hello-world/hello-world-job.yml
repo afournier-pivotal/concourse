@@ -7,5 +7,6 @@ resources:
 jobs:
 - name: hello-world-job
   plan:
+   - get: first-concourse-pipeline
    - task: hello-world-task
-     file: concourse/tasks/hello-world/hello-world-task.yml
+     file: concourse/blob/master/concourse/tasks/hello-world/hello-world-task.yml
